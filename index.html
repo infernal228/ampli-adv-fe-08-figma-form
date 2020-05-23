@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./SAAS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./img/fire-alt-solid.svg" />
+    <title>Nothing</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="form">
+        <div class="form-wrapper">
+          <form
+            method="POST"
+            action="https://ampli-html-forms.herokuapp.com/data"
+          >
+            <fieldset>
+              <legend>Registration</legend>
+              <div class="inputs">
+                <div>
+                  <input type="text" id="username" name="username" required />
+                  <label for="username">Name</label>
+                </div>
+                <div>
+                  <input type="email" id="email" name="email" required />
+                  <label for="email">Email</label>
+                </div>
+                <div>
+                  <input type="password" id="pass" name="pass" required />
+                  <label for="pass">Password</label>
+                </div>
+                <div>
+                  <input
+                    type="password"
+                    id="conpass"
+                    name="confirm-pass"
+                    required
+                  />
+                  <label for="conpass">Confirm password</label>
+                </div>
+              </div>
+              <div class="gender">
+                <div>
+                  <input
+                    id="mr"
+                    type="radio"
+                    name="gender"
+                    value="male"
+                    required
+                  />
+                  <label for="mr">Male</label>
+                </div>
+                <div>
+                  <input
+                    id="fr"
+                    type="radio"
+                    name="gender"
+                    value="female"
+                    required
+                  />
+                  <label for="fr">Female</label>
+                </div>
+              </div>
+              <div class="textarea_block">
+                <textarea name="bio" id="bio" required>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna wirl</textarea
+                >
+
+                <label for="">Your biography</label>
+              </div>
+              <div class="terms-n-news">
+                <div>
+                  <input id="terms" type="checkbox" name="terms" />
+                  <label for="terms">I agree with Terms and Conditions</label>
+                </div>
+                <div>
+                  <input id="news" type="checkbox" name="news" />
+                  <label for="news">Subscribe to our newsletter</label>
+                </div>
+              </div>
+              <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">
+                  <i class="fas fa-redo-alt"></i>Reset
+                </button>
+              </div>
+              <input type="hidden" name="Avtor" value="Danya" />
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
